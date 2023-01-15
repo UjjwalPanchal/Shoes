@@ -1,0 +1,375 @@
+
+/* ......................nav........................... */
+
+.logo img
+{
+    width: 30%;
+    margin-left: 2%;
+    margin-top: -60px;
+}
+.navbar
+{
+    height: 7vh;
+    background-color: rgba(180, 179, 179, 0.922);
+    z-index: 1;
+}
+.menu
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 12%;
+    margin-top: -50px;
+}
+.menu a
+{
+    text-decoration: none;
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(57, 57, 57);
+    position: relative;
+    padding:0 5px;
+}
+.menu a::before
+{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color:rgb(40, 38, 38);
+    right:0%;
+    top:0%;
+    transition:0.5s;
+}
+.menu a::after
+{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color:rgb(40, 38, 38);
+    left:0%;
+    top:100%;
+    transition:0.5s;
+}
+.menu a:hover::after
+{
+    width: 100%;
+}
+.menu a:hover::before
+{
+    width: 100%;
+}
+.menu a:hover
+{
+    color:black;
+    font-weight: bold;
+}
+/* .............................czl...........................  */
+
+.czl
+{
+    height: 100vh;
+}
+
+/* ......................collection........................... */ 
+
+.heading
+{ 
+    width:97%;
+    text-align: center;
+    height: 25vh;
+    padding-top: 100px;
+    text-transform:uppercase;
+    font-size:80px;
+    font-family: copperplate;
+    font-weight: 500;
+    color:transparent;
+    background-image: url(../img/pc03.jpg);
+    -webkit-background-clip: text;
+}
+.box
+{
+    margin: 50px 50px;
+}
+.box1
+{
+    margin:0 20px ;
+    cursor: pointer;
+}
+figcaption
+{
+    margin-top: 0px;
+    margin-left:70px;
+    font-size: 40px;
+    font-family: copperplate;
+    color:white;
+}
+/* ......................card..........................  */
+
+.heading1
+{
+    width:97%;
+    margin-top: 170px;
+    text-align: center;
+    font-family: copperplate;
+    font-size:90px;
+    color:transparent;
+    background-image: url(../img/pc03.jpg);
+    -webkit-background-clip: text;
+}
+.card
+{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.495);
+    transition: 0.5s;
+}
+.card:hover
+{
+    transform: translatey(-10px);
+    cursor: pointer;
+}
+.cardImg
+{
+    height: 300px;
+}  
+.row
+{
+    padding-left: 60px;
+}
+/* ......................upcoming..........................  */
+
+.heading2
+{
+    width:97%;
+    margin-top:150px;
+    margin-bottom: -100px;
+    text-align: center;
+    font-family: copperplate;
+    font-size:90px;
+    color:transparent;
+    background-image: url(../img/pc03.jpg);
+    -webkit-background-clip: text;
+}
+
+.upcoming
+{
+    margin-top: 0px;
+    width: 100%;
+    height: 100vh;
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card1
+{
+    width: 320px;
+    height:500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border:8px solid #fff;
+    position:relative;
+}
+.card-img1
+{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 15px;
+}
+.card-inside
+{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:-100%;
+    background: rgba(55, 55, 55, 0.281);
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    color:#fff;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition:2s;
+}
+
+.card1:hover .card-inside{
+    right:0;
+}
+
+
+.card-title
+{
+    text-transform: uppercase;
+    font-size:50px;
+    font-weight:500px;
+}
+.card-sub-title
+{
+    text-transform: capitalize;
+    font-size:14px;
+    font-weight:300px;
+    letter-spacing: 1px;
+}
+.card-info
+{
+    font-size:16px;
+    line-height:25px;
+    margin:40px 0px;
+    font-weight:400px;
+}
+.card-btn
+{
+    color:rgb(66, 66, 66);
+    background: rgb(173, 173, 173);
+    padding:10px 20px;
+    border-radius:5px;
+    text-transform:capitalize;
+    width:130px;
+    border:none;
+    outline:none;
+    font-weight:500;
+    cursor: pointer;
+}
+
+
+/* ......................customise..........................  */
+
+
+.heading3
+{
+    width:97%;
+    margin-top:0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: copperplate;
+    font-size:90px;
+    color:transparent;
+    background-image: url(../img/pc03.jpg);
+    -webkit-background-clip: text;
+}
+
+.customise
+{
+    width:100%;
+    height:60vh;
+    position:relative;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.card2
+{
+    width:300px;
+    height:400px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.card2 .img 
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image:url(https://static.pxlecdn.com/photos/463908049/original/61fca31e7b8083c8457a.jpg);
+    background-size:cover;
+    border-radius:10px;
+    pointer-events:none;
+    transition:.5s left, 1s opacity;
+    transition-delay:1s;
+}
+
+.card2:nth-child(2) .img{
+    background-image:url(https://static.pxlecdn.com/photos/486349613/original/df8dcd9632ea94f74506.jpg);
+}
+
+.card2:nth-child(3) .img{
+    background-image:url(https://static.pxlecdn.com/photos/489547550/original/Image_2.jpg);
+}
+
+.card2 .img:nth-child(1){
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    z-index:2;
+}
+
+.card2 .img:nth-child(2){
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left:-0.75px;
+}
+
+.content{
+    position:absolute;
+    bottom:0;
+    width:90%;
+    text-align:center;
+    height:0%;
+    border-radius:10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.305);
+    background: #fff;
+    transition:1s;
+    overflow: hidden;
+}
+
+.cardheading{
+    text-transform:capitalize;
+    font-size: 40px;
+    font-weight:400;
+}
+
+.para{
+    margin:30px 0;
+}
+
+.card-btn2
+{
+    width:100%;
+    height:30px;
+    border:1px solid #000;
+    color:#000;
+    text-transform: capitalize;
+    background:none;
+    outline:none;
+    transition:1s;
+    cursor: pointer;
+    display:block;
+    margin:auto;
+}
+
+.card-btn2:hover{
+    background:#000;
+    color:#fff;
+}
+
+.card2:hover .content{
+    bottom:5%;
+    height:90%;
+    padding:20px 40px;
+}
+
+.card2:hover .img:nth-child(1){
+    left:-5%;
+    opacity:0;
+}
+
+.card2:hover .img:nth-child(2){
+    left:5%;
+    opacity:0;
+}
+
+
+
+
+
+
+
+
+.hello
+{
+    height: 100vh;
+}
